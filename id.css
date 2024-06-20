@@ -1,0 +1,11 @@
+#watchSelection {
+    grid-area: watchSelection;
+}
+
+#choosingGift {
+    grid-area: choosingGift;
+}
+
+#selectionRings {
+    grid-area: selectionRings;
+}
