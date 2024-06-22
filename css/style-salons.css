@@ -1,0 +1,112 @@
+header {
+    background-color: #333333;
+    height: 111px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title h1,
+.title h2 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 5em;
+    margin: 0;
+    font-family: 'Inter';
+    letter-spacing: 15px;
+    color: white;
+}
+.title h2 {
+    height: 49px;
+    top: 400px;
+    font-size: 3.2em;
+
+}
+
+
+#dark-back {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Nunito';
+
+}
+
+#light-back {
+    color: #1a1a1a;
+    text-align: center;
+    font-family: 'Nunito';
+
+}
+
+
+.map{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    padding: 0% 10% 0% 10%;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+footer div {
+    display: block;
+    width: 25%;
+    padding: 2%;
+}
+
+footer a {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+}
+
+.pLink a:hover {
+    font-weight: bold;
+    transition: transform 0.3s;
+    transform: scale(1.1);
+}
+
+.contacts a:hover {
+    font-weight: bold;
+}
+
+footer div #light-back {
+    text-align: left;
+    font-size: 1em;
+}
+
+.contacts img {
+    float: left;
+}
