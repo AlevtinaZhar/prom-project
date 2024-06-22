@@ -9,65 +9,116 @@ header {
     box-sizing: border-box;
 }
 
-.title h1,
-.title h2 {
+#dark-back {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Nunito';
+}
+
+.title {
+    display: flex;
+}
+
+.title-menu {
     position: absolute;
     width: 100%;
     text-align: center;
 }
 
-.title h1 {
-    font-size: 5em;
+.title-menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 5% 0 5%;
+    z-index: 2;
+}
+
+.title-menu h1 {
+    font-size: 6em;
     margin: 0;
     font-family: 'Inter';
     letter-spacing: 15px;
     color: white;
 }
-.title h2 {
-    height: 49px;
-    top: 400px;
-    font-size: 3.2em;
+
+.title .title-menu img {
+    width: 30px;
+}
+
+.title-menu a {
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.title-menu a:hover,
+.title-menu img:hover {
+    font-weight: bold;
+    filter: none;
+    transition: transform 0.3s;
+    transform: scale(1.2);
 
 }
 
-
-#dark-back {
-    color: #ffffff;
-    text-align: center;
-    font-size: 1.5em;
-    font-family: 'Nunito';
-
-}
-
-#light-back {
+.backLink a {
     color: #1a1a1a;
-    text-align: center;
     font-family: 'Nunito';
+    font-size: 1.2em;
+}
+
+.backLink a:hover {
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s;
+    transform: scale(5);
+}
+
+.backLink {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
 
 }
 
+.allInfo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: #1a1a1a;
+    font-family: 'Nunito';
+}
 
-.map{
+.title-contacts {
+    width: 100%;
+    text-align: center;
+}
+
+.allInfo div {
+    margin-top: 20px;
+}
+
+li {
+    list-style-type: none;
+    margin: 5px;
+}
+
+.allInfo hr {
+    width: 80%;
+    margin: 3% 10% 0% 10%;
+}
+
+i {
+    height: 50px;
+    float: left;
+    margin-right: 5px;
+}
+
+
+
+.map {
     display: flex;
     justify-content: space-evenly;
     margin: 25px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 footer {
@@ -78,15 +129,18 @@ footer {
     display: inline-flex;
     align-items: flex-start;
     justify-content: space-evenly;
+    font-family: 'Nunito';
 }
 
 footer div {
+
     display: block;
     width: 25%;
     padding: 2%;
 }
 
 footer a {
+    color: #1a1a1a;
     width: 100%;
     display: block;
     text-decoration: none;
