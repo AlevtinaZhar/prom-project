@@ -1,0 +1,41 @@
+@media screen and (max-width:960px) {
+
+    section div,
+    h1 {
+        display: none;
+    }
+
+    div.title-menu {
+        background-color: #1a1a1a6c;
+    }
+
+    div.title-menu a {
+        display: flex;
+    }
+
+    div.usefuArticles {
+        display: block;
+    }
+
+    div.usefuArticles div {
+        height: 300px;
+        margin: 5px;
+    }
+
+    div.usefuArticles h3 {
+        height: 90px;
+    }
+
+    div.usefuArticles div:hover {
+        transform: none;
+
+    }
+
+    div.articles {
+        height: 100%;
+    }
+
+    .articles button {
+        margin-bottom: 20px;
+    }
+}

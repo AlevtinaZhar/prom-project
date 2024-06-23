@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>OJJO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="images/Vector.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,20 +32,19 @@
             </section>
             <img src="images/header-img.jpg" alt="Изображение с кольцом" title="rings">
             <div class="title-menu">
-                <a href=""  id="dark-back">Контрагентам</a>
-                <a href=""  id="dark-back">Вакансии</a>
-                <a href=""  id="dark-back">Дизайнерам</a>
+                <a href="" id="dark-back">Контрагентам</a>
+                <a href="" id="dark-back">Вакансии</a>
+                <a href="" id="dark-back">Дизайнерам</a>
                 <h1>OJJO</h1>
-                <a href=""  id="dark-back">Поиск</a>
-                <a href=""  id="dark-back">Вход/регистрация</a>
+                <a href="" id="dark-back">Поиск</a>
+                <a href="" id="dark-back">Вход/регистрация</a>
                 <img src="../prom-project/images/header/mdi_account.svg" alt="">
                 <img src="../prom-project/images/header/topcoat_like.svg" alt="">
 
             </div>
-            <!-- <h1>OJJO</h1> -->
             <h2 id="dark-back">Долго, дорого, богато!</h2>
             <div class="button-title">
-                <button>Каталог изделий</button>
+                <button onclick="window.open('all-products.html')">Каталог изделий</button>
             </div>
         </div>
     </header>
@@ -153,7 +152,7 @@
                 </p>
             </div>
             <div>
-                <button onclick="document.location='our-salons.html'"> Наши салоны</button>
+                <button onclick="window.open('our-salons.html')"> Наши салоны</button>
             </div>
         </div>
 
@@ -204,13 +203,11 @@
             </div>
             <div class="input">
                 <div class="input-form-mail">
-                    <div class="input-group" style="flex-grow: 2;">
-                        <input type="text" id="text-input" placeholder="Ваш e-mail">
-                        <div id="error"></div>
-                    </div>
-                    <div class="button-form-mail">
-                        <button>Отправить</button>
-                    </div>
+                    <form class="input-group" style="flex-grow: 2;" id="1">
+                        <input class="mail" type="text" id="text-input" placeholder="Ваш e-mail">
+                        <button type='submit'>Отправить</button>
+                    </form>
+                    <div id="error"></div>
                 </div>
             </div>
         </div>

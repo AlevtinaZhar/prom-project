@@ -1,84 +1,60 @@
-let input = document.getElementById('text-input');
-input.addEventListener('keypress', checkOne);
+// let input = document.getElementById('1');
+// input.addEventListener('submit',checkOne)
+// let wordsArray = [];
+// let words;
+// error.classList.add('error')
+const form = document.querySelector('.input-group');
+const mail = form.querySelector('.mail')
+let email;
 let wordsArray = [];
-let words;
-error.classList.add('error')
 
-function buttonStart() {
-    document.getElementById("buttonStart").style.display = "none";
-    document.getElementById("input-form").style.display = "block";
-    document.getElementById("buttonNewStart").style.display = "block";
-}
+form.addEventListener('submit', (evt) => {
+    // Отменяем действие по умолчанию
+    evt.preventDefault();
+    checkOne();
+});
 
-function buttonNewStart(){
-    wordsArray.splice(0, wordsArray.length);
-}
 
 // проверяет массив на дубликаты
 function checkOne(event) {
-    words = document.getElementById('text-input').value;
+    email = document.getElementById('text-input').value;
     let valid;
     let key;
-    if (event.key == 'Enter') {
-        for (key of wordsArray) {
-            if (key == words) {
-                error.textContent = 'А такое слово уже есть'
-                input.value = ''
-                valid = false;
-                break;
-            }
+    for (key of wordsArray) {
+        if (key == email) {
+            error.textContent = 'Данный почтовый адрес уже зарегистрирован'
+            mail.value = ''
+            valid = false;
+            break;
         }
-        if (valid != false) {
-            checkTwo();
-        }
+    }
+    if (valid != false) {
+        checkTwo();
     }
 }
 
-// если дубликатов не найдено проверяет вводимый текст
+// // если дубликатов не найдено проверяет вводимый текст
 function checkTwo() {
-    let isLetter = /^[A-zА-Яа-я\-]+$/.test(words);
-    let isNumber = /^\d+$/.test(words);
-    error.textContent = ''
-    if (words == "") {
-        error.textContent = 'Данные не заполнены'
-        input.value = ''
-    }
-    else if (isNumber) {
-        error.textContent = 'Слово должно состоять из букв ;)'
-        input.value = ''
+    let isLetter = /^[A-zА-Яа-я\-]+$/.test(email);
 
+    error.textContent = ''
+    if (email == "") {
+        error.textContent = 'Пустое поле'
+        mail.value = ''
     }
-    else if (words.length == 1) {
-        error.textContent = 'Вы уверены, что слово состоит из одной буквы? :)'
-        input.value = ''
+
+    else if (email.length == 1) {
+        error.textContent = 'Не достаточная длина почтового адреса '
+        mail.value = ''
 
     }
     else if (isLetter) {
-        input.value = ''
-        wordsArray.push(words);
-        console.log(wordsArray)
-        if (wordsArray.length != 1) {
-            finallyCheck();
-        }
+        mail.value = ''
+        wordsArray.push(email);
+        alert('Спасибо за участие')
     }
     else {
-        error.textContent = 'Вы написали что-то странное (скорее всего в слове есть цифры)'
-        input.value = ''
+        error.textContent = 'Ошибка ввода данных'
+        mail.value = ''
     }
-}
-
-// поселдняя проверка на первую и последнюю букву
-// если слово не подходит, удаляет его из массива
-function finallyCheck() {
-    let lastWord = wordsArray.at(-2);
-    let lastLetter = lastWord.toString().slice(-1);
-    let firstLetter = words.charAt(0);
-
-
-    if (firstLetter != lastLetter) {
-        wordsArray.pop();
-        input.value = ''
-        error.textContent = 'Ваше слово должно начинаться на ' + lastLetter;
-    }
-
 }

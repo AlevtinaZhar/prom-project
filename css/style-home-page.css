@@ -1,3 +1,4 @@
+@import url(media-home-page.css);
 @import url(animation.css);
 @import url(slider.css);
 
@@ -6,10 +7,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-.error {
+
+#error {
     color: red;
-    font-size: 1.3em;
+    font-size: 1.1em;
+    margin: 4px;
 }
+
 .title h2,
 .title-menu {
     position: absolute;
@@ -176,6 +180,7 @@ body {
     transition: transform 0.3s;
     transform: scale(1.1);
     filter: saturate(200%);
+    cursor: pointer;
 
 }
 
@@ -247,13 +252,17 @@ body {
     height: 60%;
 }
 
+.input-group {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
 .input-form-mail {
     border: 3px solid black;
     width: 100%;
     height: 110px;
-    position: relative;
-    display: inline-flex;
-    padding: 23px 0px 26px 20px;
+    padding: 23px;
     background-color: white;
 }
 
@@ -322,7 +331,7 @@ button {
     color: #444341;
 }
 
-.button-form-mail button:hover,
+.input-group button:hover,
 .articles button:hover {
     background-color: white;
     color: #444341;
@@ -335,26 +344,19 @@ button {
     color: white;
 }
 
-.button-form-mail button {
+.input-group button {
     background-color: #444341;
     color: white;
     text-transform: uppercase;
     border: none;
-
-
 }
 
 input,
 button {
-    width: 40%;
+    width: 48%;
     height: 50px;
-    width: 90%;
 }
 
-.input-group,
-.button-form-mail {
-    width: 40%;
-}
 
 
 footer {
