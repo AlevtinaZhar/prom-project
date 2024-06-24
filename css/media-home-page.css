@@ -9,9 +9,6 @@
         background-color: #1a1a1a6c;
     }
 
-    div.title-menu a {
-        display: flex;
-    }
 
     div.usefuArticles {
         display: block;
@@ -72,6 +69,8 @@
         display: block;
         width: 100%;
     }
-
+    div.button-title {
+        top: 528px;
+    }
 
 }

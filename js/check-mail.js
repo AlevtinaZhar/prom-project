@@ -35,7 +35,7 @@ function checkOne(event) {
 
 // // если дубликатов не найдено проверяет вводимый текст
 function checkTwo() {
-    let isLetter = /^[A-zА-Яа-я\-]+$/.test(email);
+    let isLetter = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(email);
 
     error.textContent = ''
     if (email == "") {
