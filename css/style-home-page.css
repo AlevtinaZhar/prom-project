@@ -371,6 +371,7 @@ footer {
     background-color: white;
     display: inline-flex;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 footer div {
