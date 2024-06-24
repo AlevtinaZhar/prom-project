@@ -38,4 +38,32 @@
     .articles button {
         margin-bottom: 20px;
     }
+
+    .registration div {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    div.title-menu {
+        background-color: #1a1a1a6c;
+    }
+
+    div.title-menu {
+        flex-direction: column;
+    }
+
+    footer.footer {
+        display: block;
+    }
+
+    .pLink,
+    .payment,
+    .contacts {
+        display: block;
+        width: 100%;
+    }
+
+
 }
