@@ -46,9 +46,6 @@
 }
 
 @media screen and (max-width:640px) {
-    div.title-menu {
-        background-color: #1a1a1a6c;
-    }
 
     div.title-menu {
         flex-direction: column;

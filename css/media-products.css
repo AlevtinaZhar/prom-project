@@ -9,6 +9,20 @@
         height: 80px;
         align-items: center;
     }
+
+    div.info {
+        display: block;
+    }
+
+    div.text {
+        display: block;
+        width: 100%;
+    }
+
+    div.products {
+        justify-content: space-evenly;
+    }
+   
 }
 
 @media screen and (max-width:640px) {
