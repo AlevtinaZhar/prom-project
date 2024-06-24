@@ -39,11 +39,22 @@
         margin-bottom: 20px;
     }
 
-    .registration div {
+    div.registration {
+        display: flex;
+        justify-content: center;
+    }
+
+    div.registration-text {
+        width: 60%;
+    }
+
+    .registration div.input {
         display: block;
-        width: 100%;
+        width: 80%;
     }
 }
+
+
 
 @media screen and (max-width:640px) {
 

@@ -1,3 +1,13 @@
+@media screen and (max-width:1115px) {
+    div.info {
+        display: block;
+    }
+    div.text {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
 @media screen and (max-width:960px) {
     div.title h1 {
         display: none;
@@ -10,14 +20,6 @@
         align-items: center;
     }
 
-    div.info {
-        display: block;
-    }
-
-    div.text {
-        display: block;
-        width: 100%;
-    }
 
     div.products {
         justify-content: space-evenly;
